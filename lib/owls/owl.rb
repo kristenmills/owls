@@ -33,7 +33,7 @@ class Owl
     @stare_time > 500
   end
 
-  def level_up!
+  def level_up
     @creepiness_factor += 0.5 if @creepiness_factor <= 99.5
     @stare_time = (11 * @creepiness_factor).to_i
     @head_rotation = ((20*@creepiness_factor)%360).to_i
